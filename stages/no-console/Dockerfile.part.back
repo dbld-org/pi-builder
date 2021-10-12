@@ -1,0 +1,5 @@
+RUN sed -e 's/console[^ ]*\s//g' /boot/cmdline.txt > /boot/cmdline.txt.mod \
+&& cat /boot/cmdline.txt.mod \
+&& mv /boot/cmdline.txt /boot/cmdline.txt.bak \
+&& mv /boot/cmdline.txt.mod /boot/cmdline.txt \
+&& cat /boot/cmdline.txt

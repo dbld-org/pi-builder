@@ -1,0 +1,1 @@
+RUN sed -e 's/console[^ ]*\s//g' /boot/cmdline.txt > /boot/cmdline.txt
