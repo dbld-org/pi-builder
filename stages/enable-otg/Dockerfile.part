@@ -1,0 +1,2 @@
+RUN sed -i 's/$/ modules-load=dwc2,g_ether /g' /boot/cmdline.txt \
+&& cat /boot/cmdline.txt
