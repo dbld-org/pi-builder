@@ -5,7 +5,7 @@ PROJECT ?= deye
 BOARD ?= rpi
 
 # List of necessary stages, more on it below
-STAGES ?= __init__ os no-bluetooth no-audit ro ssh-keygen no-console __cleanup__
+STAGES ?= __init__ os no-bluetooth no-audit ro ssh-keygen no-console ssh-root enable-otg __cleanup__
 
 # Target system hostname
 HOSTNAME ?= energia-clone
@@ -17,4 +17,4 @@ LOCALE ?= en_US
 TIMEZONE ?= Africa/Johannesburg
 
 # Memory card location
-CARD ?= /dev/mmcblk0
+CARD ?= /dev/sdd
